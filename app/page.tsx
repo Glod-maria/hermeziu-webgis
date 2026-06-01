@@ -52,8 +52,8 @@ export default function Home() {
 
           <div className="rounded-[34px] overflow-hidden shadow-2xl border border-[#d9c5a1]">
             <img
-              src="/muzeu.JPEG"
-              alt="Muzeul Memorial Costache Negruzzi"
+              src="/muzeu.jpeg"
+              alt="Muzeul Contantin Negruzzi"
               className="w-full h-[430px] object-cover"
             />
           </div>
