@@ -1,0 +1,128 @@
+import MapSection from "./MapSection";
+
+export default function Home() {
+  return (
+    <main className="min-h-screen bg-gradient-to-b from-[#faf7f2] to-[#f1e6d6] text-[#2f1d14]">
+      <section className="max-w-7xl mx-auto px-8 py-8">
+        <nav className="flex justify-between items-center mb-8">
+          <h2 className="text-2xl font-serif font-bold">
+            Hermeziu WebGIS
+          </h2>
+
+          <a
+            href="/muzeu"
+            className="bg-[#8b5a2b] text-white px-5 py-3 rounded-2xl font-bold hover:bg-[#a56b35]"
+          >
+            Vizitează muzeul
+          </a>
+        </nav>
+
+        <div className="grid lg:grid-cols-2 gap-8 items-center">
+          <div>
+            <p className="uppercase tracking-[0.3em] text-sm text-[#8b5a2b] mb-4">
+              Patrimoniu cultural interactiv
+            </p>
+
+            <h1 className="text-5xl md:text-7xl font-serif font-bold mb-6">
+              Descoperă patrimoniul familiei Negruzzi
+            </h1>
+
+            <p className="text-xl leading-relaxed mb-8">
+              Explorează conacul, istoria, fotografiile, elementele GIS
+              vectorizate și turul virtual al domeniului de la Hermeziu
+              printr-o aplicație WebGIS interactivă.
+            </p>
+
+            <div className="flex gap-4 flex-wrap">
+              <a
+                href="#harta"
+                className="bg-[#4a2f1f] text-white px-7 py-4 rounded-2xl font-bold hover:bg-[#6b4a32]"
+              >
+                Explorează patrimoniul
+              </a>
+
+              <a
+                href="/muzeu"
+                className="border-2 border-[#8b5a2b] text-[#8b5a2b] px-7 py-4 rounded-2xl font-bold hover:bg-[#fffdf8]"
+              >
+                Vezi pagina muzeului
+              </a>
+            </div>
+          </div>
+
+          <div className="rounded-[34px] overflow-hidden shadow-2xl border border-[#d9c5a1]">
+            <img
+              src="/muzeu.JPEG"
+              alt="Muzeul Memorial Costache Negruzzi"
+              className="w-full h-[430px] object-cover"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section className="max-w-7xl mx-auto px-8 py-10">
+        <div className="grid md:grid-cols-4 gap-5">
+          <div className="bg-[#fffdf8] rounded-3xl shadow p-6 border border-[#d9c5a1]">
+            <p className="text-4xl font-bold text-[#8b5a2b]">1</p>
+            <p className="font-bold">Obiectiv cultural</p>
+          </div>
+
+          <div className="bg-[#fffdf8] rounded-3xl shadow p-6 border border-[#d9c5a1]">
+            <p className="text-4xl font-bold text-[#8b5a2b]">10+</p>
+            <p className="font-bold">Fotografii</p>
+          </div>
+
+          <div className="bg-[#fffdf8] rounded-3xl shadow p-6 border border-[#d9c5a1]">
+            <p className="text-4xl font-bold text-[#8b5a2b]">1</p>
+            <p className="font-bold">Tur virtual 3D</p>
+          </div>
+
+          <div className="bg-[#fffdf8] rounded-3xl shadow p-6 border border-[#d9c5a1]">
+            <p className="text-4xl font-bold text-[#8b5a2b]">GIS</p>
+            <p className="font-bold">Date vectorizate</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="harta" className="max-w-7xl mx-auto px-8 py-10">
+        <div className="bg-[#fffdf8] rounded-[34px] shadow-2xl border border-[#d9c5a1] p-6">
+          <div className="flex justify-between items-center mb-6 flex-wrap gap-4">
+            <div>
+              <h2 className="text-4xl font-serif font-bold">
+                Harta interactivă
+              </h2>
+              <p className="text-lg text-[#5d4a3a]">
+                Localizarea muzeului, limita vectorizată a proprietății și
+                elemente de patrimoniu integrate prin GeoJSON.
+              </p>
+            </div>
+
+            <a
+              href="/muzeu"
+              className="bg-[#8b5a2b] text-white px-5 py-3 rounded-2xl font-bold hover:bg-[#a56b35]"
+            >
+              Detalii muzeu
+            </a>
+          </div>
+
+          <div className="rounded-3xl overflow-hidden">
+            <MapSection />
+          </div>
+        </div>
+      </section>
+
+      <footer className="bg-[#4a2f1f] text-white mt-16">
+        <div className="max-w-7xl mx-auto px-8 py-8 flex justify-between flex-wrap gap-4">
+          <p>
+            Realizat pentru promovarea patrimoniului cultural al familiei
+            Negruzzi din Hermeziu.
+          </p>
+
+          <p className="text-[#d9b46f]">
+            Next.js • Leaflet • QGIS • GeoJSON
+          </p>
+        </div>
+      </footer>
+    </main>
+  );
+}
