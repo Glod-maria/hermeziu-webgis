@@ -6,15 +6,6 @@ export default function MuzeuPage() {
     ["2026", "Muzeul este integrat în aplicația WebGIS interactivă."],
   ];
 
-  const family = [
-    ["Costache Negruzzi", "Scriitor, om politic și întemeietor al prozei moderne românești."],
-    ["Iacob Negruzzi", "Fondator al Junimii și editor al revistei „Convorbiri Literare”."],
-    ["Leon C. Negruzzi", "Jurist, scriitor și fost primar al municipiului Iași."],
-    ["Ella Negruzzi", "Prima femeie avocat din România."],
-    ["Mihai Negruzzi", "Militar, om politic și fost primar al Iașului."],
-    ["Leon Bob Negruzzi", "Urmaș al familiei, implicat în păstrarea memoriei Negruzzi."],
-  ];
-
   return (
     <main className="min-h-screen bg-gradient-to-b from-[#faf7f2] to-[#f1e6d6] text-[#2f1d14]">
       <section className="max-w-7xl mx-auto px-8 py-8">
@@ -90,6 +81,13 @@ export default function MuzeuPage() {
           >
             🏛️ Explorează turul 3D
           </a>
+
+          <a
+            href="/familie"
+            className="block text-center mt-4 bg-[#fff7ec] text-[#4a2f1f] px-6 py-4 rounded-2xl font-bold hover:bg-[#f1e6d6]"
+          >
+            👨‍👩‍👧 Vezi familia Negruzzi
+          </a>
         </div>
       </section>
 
@@ -101,8 +99,13 @@ export default function MuzeuPage() {
 
           <div className="grid md:grid-cols-4 gap-5">
             {timeline.map(([year, text]) => (
-              <div key={year} className="bg-[#faf7f2] rounded-2xl p-6 border-l-8 border-[#c58a3a] shadow">
-                <p className="text-4xl font-bold text-[#8b5a2b] mb-3">{year}</p>
+              <div
+                key={year}
+                className="bg-[#faf7f2] rounded-2xl p-6 border-l-8 border-[#c58a3a] shadow"
+              >
+                <p className="text-4xl font-bold text-[#8b5a2b] mb-3">
+                  {year}
+                </p>
                 <p className="text-lg">{text}</p>
               </div>
             ))}
@@ -110,24 +113,31 @@ export default function MuzeuPage() {
         </div>
       </section>
 
-      <section className="max-w-7xl mx-auto px-8 py-10">
-        <h2 className="text-4xl font-serif font-bold mb-8">
-          Familia Negruzzi
-        </h2>
+<section className="max-w-7xl mx-auto px-8 py-10">
+  <div className="bg-[#fffdf8] rounded-[30px] shadow-xl border border-[#d9c5a1] p-10 text-center">
 
-        <div className="grid md:grid-cols-2 gap-5">
-          {family.map(([name, text]) => (
-            <div
-              key={name}
-              className="bg-[#fffdf8] border-l-8 border-[#c58a3a] rounded-2xl shadow p-6"
-            >
-              <h3 className="text-2xl font-serif font-bold mb-2">{name}</h3>
-              <p className="text-lg leading-relaxed">{text}</p>
-            </div>
-          ))}
-        </div>
-      </section>
+    <p className="uppercase tracking-[0.3em] text-sm text-[#8b5a2b] mb-4">
+      Arbore genealogic
+    </p>
 
+    <h2 className="text-5xl font-serif font-bold mb-5">
+      Familia Negruzzi
+    </h2>
+
+    <p className="text-xl max-w-3xl mx-auto mb-8">
+      Descoperă istoria familiei Negruzzi, de la Dinu Negruți și Costache
+      Negruzzi până la Ella Negruzzi, Mihai Negruzzi și Leon Bob Negruzzi.
+    </p>
+
+    <a
+      href="/familie"
+      className="inline-block bg-[#4a2f1f] text-white px-10 py-5 rounded-2xl font-bold text-lg hover:bg-[#6b4a32]"
+    >
+      👨‍👩‍👧 Explorează familia Negruzzi
+    </a>
+
+  </div>
+</section>
       <section className="max-w-7xl mx-auto px-8 py-10">
         <div className="bg-[#fffdf8] rounded-3xl shadow-xl border border-[#d9c5a1] p-8">
           <h2 className="text-4xl font-serif font-bold mb-3">
@@ -137,16 +147,16 @@ export default function MuzeuPage() {
           <div className="w-32 h-1 bg-[#c58a3a] rounded-full mb-8" />
 
           <div className="flex gap-5 overflow-x-auto pb-4">
-            <img src="/bust.jpeg" className="h-80 rounded-3xl shadow-lg" alt="" />
-            <img src="/trasura.jpeg" className="h-80 rounded-3xl shadow-lg" alt="" />
-            <img src="/poarta-mica.jpeg" className="h-80 rounded-3xl shadow-lg" alt="" />
-            <img src="/poarta-mare.jpeg" className="h-80 rounded-3xl shadow-lg" alt="" />
-            <img src="/vizitatori.jpeg" className="h-80 rounded-3xl shadow-lg" alt="" />
-            <img src="/vizitat.jpeg" className="h-80 rounded-3xl shadow-lg" alt="" />
-            <img src="/cop.jpeg" className="h-80 rounded-3xl shadow-lg" alt="" />
-            <img src="/copii.jpeg" className="h-80 rounded-3xl shadow-lg" alt="" />
-            <img src="/buni.jpeg" className="h-80 rounded-3xl shadow-lg" alt="" />
-            <img src="/prezentatoarea.jpeg" className="h-80 rounded-3xl shadow-lg" alt="" />
+            <img src="/bust.jpeg" className="h-80 rounded-3xl shadow-lg" alt="Bust" />
+            <img src="/trasura.jpeg" className="h-80 rounded-3xl shadow-lg" alt="Trăsură" />
+            <img src="/poarta-mica.jpeg" className="h-80 rounded-3xl shadow-lg" alt="Poartă mică" />
+            <img src="/poarta-mare.jpeg" className="h-80 rounded-3xl shadow-lg" alt="Poartă mare" />
+            <img src="/vizitatori.jpeg" className="h-80 rounded-3xl shadow-lg" alt="Vizitatori" />
+            <img src="/vizitat.jpeg" className="h-80 rounded-3xl shadow-lg" alt="Muzeu vizitat" />
+            <img src="/cop.jpeg" className="h-80 rounded-3xl shadow-lg" alt="Copil" />
+            <img src="/copii.jpeg" className="h-80 rounded-3xl shadow-lg" alt="Copii" />
+            <img src="/buni.jpeg" className="h-80 rounded-3xl shadow-lg" alt="Bunici" />
+            <img src="/prezentatoarea.jpeg" className="h-80 rounded-3xl shadow-lg" alt="Prezentatoare" />
           </div>
         </div>
       </section>

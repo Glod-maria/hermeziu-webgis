@@ -4,17 +4,26 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-gradient-to-b from-[#faf7f2] to-[#f1e6d6] text-[#2f1d14]">
       <section className="max-w-7xl mx-auto px-8 py-8">
-        <nav className="flex justify-between items-center mb-8">
+        <nav className="flex justify-between items-center mb-8 flex-wrap gap-4">
           <h2 className="text-2xl font-serif font-bold">
             Hermeziu WebGIS
           </h2>
 
-          <a
-            href="/muzeu"
-            className="bg-[#8b5a2b] text-white px-5 py-3 rounded-2xl font-bold hover:bg-[#a56b35]"
-          >
-            Vizitează muzeul
-          </a>
+          <div className="flex gap-3 flex-wrap">
+            <a
+              href="/muzeu"
+              className="bg-[#8b5a2b] text-white px-5 py-3 rounded-2xl font-bold hover:bg-[#a56b35]"
+            >
+              🏛️ Muzeu
+            </a>
+
+            <a
+              href="/biserica"
+              className="bg-[#c58a3a] text-white px-5 py-3 rounded-2xl font-bold hover:bg-[#a56b35]"
+            >
+              ⛪ Biserică
+            </a>
+          </div>
         </nav>
 
         <div className="grid lg:grid-cols-2 gap-8 items-center">
@@ -28,9 +37,9 @@ export default function Home() {
             </h1>
 
             <p className="text-xl leading-relaxed mb-8">
-              Explorează conacul, istoria, fotografiile, elementele GIS
-              vectorizate și turul virtual al domeniului de la Hermeziu
-              printr-o aplicație WebGIS interactivă.
+              Explorează conacul, biserica, istoria familiei, fotografiile,
+              elementele GIS vectorizate și turul virtual al domeniului de la
+              Hermeziu printr-o aplicație WebGIS interactivă.
             </p>
 
             <div className="flex gap-4 flex-wrap">
@@ -45,7 +54,14 @@ export default function Home() {
                 href="/muzeu"
                 className="border-2 border-[#8b5a2b] text-[#8b5a2b] px-7 py-4 rounded-2xl font-bold hover:bg-[#fffdf8]"
               >
-                Vezi pagina muzeului
+                🏛️ Pagina muzeului
+              </a>
+
+              <a
+                href="/biserica"
+                className="bg-[#c58a3a] text-white px-7 py-4 rounded-2xl font-bold hover:bg-[#a56b35]"
+              >
+                ⛪ Pagina bisericii
               </a>
             </div>
           </div>
@@ -53,7 +69,7 @@ export default function Home() {
           <div className="rounded-[34px] overflow-hidden shadow-2xl border border-[#d9c5a1]">
             <img
               src="/muzeu.jpeg"
-              alt="Muzeul Contantin Negruzzi"
+              alt="Muzeul Constantin Negruzzi"
               className="w-full h-[430px] object-cover"
             />
           </div>
@@ -63,8 +79,8 @@ export default function Home() {
       <section className="max-w-7xl mx-auto px-8 py-10">
         <div className="grid md:grid-cols-4 gap-5">
           <div className="bg-[#fffdf8] rounded-3xl shadow p-6 border border-[#d9c5a1]">
-            <p className="text-4xl font-bold text-[#8b5a2b]">1</p>
-            <p className="font-bold">Obiectiv cultural</p>
+            <p className="text-4xl font-bold text-[#8b5a2b]">3</p>
+            <p className="font-bold">Obiective culturale</p>
           </div>
 
           <div className="bg-[#fffdf8] rounded-3xl shadow p-6 border border-[#d9c5a1]">
@@ -91,18 +107,29 @@ export default function Home() {
               <h2 className="text-4xl font-serif font-bold">
                 Harta interactivă
               </h2>
+
               <p className="text-lg text-[#5d4a3a]">
-                Localizarea muzeului, limita vectorizată a proprietății și
-                elemente de patrimoniu integrate prin GeoJSON.
+                Localizarea muzeului, bisericii, limitei vectorizate a
+                proprietății și elementelor de patrimoniu integrate prin
+                GeoJSON.
               </p>
             </div>
 
-            <a
-              href="/muzeu"
-              className="bg-[#8b5a2b] text-white px-5 py-3 rounded-2xl font-bold hover:bg-[#a56b35]"
-            >
-              Detalii muzeu
-            </a>
+            <div className="flex gap-3 flex-wrap">
+              <a
+                href="/muzeu"
+                className="bg-[#8b5a2b] text-white px-5 py-3 rounded-2xl font-bold hover:bg-[#a56b35]"
+              >
+                Detalii muzeu
+              </a>
+
+              <a
+                href="/biserica"
+                className="bg-[#c58a3a] text-white px-5 py-3 rounded-2xl font-bold hover:bg-[#a56b35]"
+              >
+                Detalii biserică
+              </a>
+            </div>
           </div>
 
           <div className="rounded-3xl overflow-hidden">
