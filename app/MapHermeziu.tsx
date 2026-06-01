@@ -154,7 +154,7 @@ export default function MapHermeziu() {
         <Popup>
           <div style={{ width: "250px" }}>
             <img
-              src="/muzeu.JPEG"
+              src="/muzeu.jpeg"
               alt="Muzeul Constantin Negruzzi"
               style={{
                 width: "100%",

@@ -24,7 +24,7 @@ export default function MuzeuPage() {
 
         <div className="mt-8 rounded-[34px] overflow-hidden shadow-2xl bg-[#4a2f1f]">
           <img
-            src="/muzeu.JPEG"
+            src="/muzeu.jpeg"
             alt="Muzeul Memorial Costache Negruzzi"
             className="w-full h-[430px] object-cover opacity-90"
           />
@@ -137,16 +137,16 @@ export default function MuzeuPage() {
           <div className="w-32 h-1 bg-[#c58a3a] rounded-full mb-8" />
 
           <div className="flex gap-5 overflow-x-auto pb-4">
-            <img src="/bust.JPEG" className="h-80 rounded-3xl shadow-lg" alt="" />
-            <img src="/trasura.JPEG" className="h-80 rounded-3xl shadow-lg" alt="" />
-            <img src="/poarta-mica.JPEG" className="h-80 rounded-3xl shadow-lg" alt="" />
-            <img src="/poarta-mare.JPEG" className="h-80 rounded-3xl shadow-lg" alt="" />
-            <img src="/vizitatori.JPEG" className="h-80 rounded-3xl shadow-lg" alt="" />
-            <img src="/vizitat.JPEG" className="h-80 rounded-3xl shadow-lg" alt="" />
-            <img src="/cop.JPEG" className="h-80 rounded-3xl shadow-lg" alt="" />
-            <img src="/copii.JPEG" className="h-80 rounded-3xl shadow-lg" alt="" />
-            <img src="/buni.JPEG" className="h-80 rounded-3xl shadow-lg" alt="" />
-            <img src="/prezentatoarea.JPEG" className="h-80 rounded-3xl shadow-lg" alt="" />
+            <img src="/bust.jpeg" className="h-80 rounded-3xl shadow-lg" alt="" />
+            <img src="/trasura.jpeg" className="h-80 rounded-3xl shadow-lg" alt="" />
+            <img src="/poarta-mica.jpeg" className="h-80 rounded-3xl shadow-lg" alt="" />
+            <img src="/poarta-mare.jpeg" className="h-80 rounded-3xl shadow-lg" alt="" />
+            <img src="/vizitatori.jpeg" className="h-80 rounded-3xl shadow-lg" alt="" />
+            <img src="/vizitat.jpeg" className="h-80 rounded-3xl shadow-lg" alt="" />
+            <img src="/cop.jpeg" className="h-80 rounded-3xl shadow-lg" alt="" />
+            <img src="/copii.jpeg" className="h-80 rounded-3xl shadow-lg" alt="" />
+            <img src="/buni.jpeg" className="h-80 rounded-3xl shadow-lg" alt="" />
+            <img src="/prezentatoarea.jpeg" className="h-80 rounded-3xl shadow-lg" alt="" />
           </div>
         </div>
       </section>
