@@ -1,10 +1,16 @@
+"use client";
+
+import { useState } from "react";
+
 const membri = [
   {
+    id: "dinu",
     nume: "Dinu Negruți",
     perioada: "începutul familiei la Hermeziu",
     text: "Dinu Negruți, tatăl lui Costache Negruzzi, provenea dintr-o familie de răzeși din zona Odobeștilor. În anul 1807 s-a căsătorit cu Sofia Hermeziu și a primit ca zestre moșia Trifești-Vechi, actualul Hermeziu.",
   },
   {
+    id: "costache",
     nume: "Costache Negruzzi",
     perioada: "1808–1868",
     imagine: "/costache-negruzzi.png",
@@ -12,6 +18,7 @@ const membri = [
     copii: "A fost căsătorit cu Maria Gane și au avut cinci copii: Iacob, Leon, Gheorghe, Eliza și Nicolae. Nicolae nu apare în arborele genealogic deoarece a murit de mic, răpus de holeră.",
   },
   {
+    id: "iacob",
     nume: "Iacob Negruzzi",
     perioada: "1842–1932",
     imagine: "/iacob-negruzzi.png",
@@ -19,12 +26,20 @@ const membri = [
     copii: "A fost căsătorit cu Anna Rosetti și nu au avut descendenți.",
   },
   {
+    id: "gheorghe",
     nume: "Gheorghe Negruzzi",
     perioada: "1849–1880",
     text: "Gheorghe Negruzzi a fost fiul lui Costache Negruzzi. Și-a luat doctoratul în drept la Berlin, a profesat avocatura, fiind apreciat ca jurist. A fost membru al societății Junimea de la înființarea ei, dar nu a activat ca scriitor. A murit de tânăr și este îngropat în curtea bisericii din sat.",
     copii: "A fost căsătorit cu Anna Sturdza și au avut un singur copil: Margareta Negruzzi.",
   },
   {
+    id: "margareta",
+    nume: "Margareta Negruzzi",
+    perioada: "secolul XIX",
+    text: "Margareta Negruzzi a fost fiica lui Gheorghe Negruzzi și a Annei Sturdza.",
+  },
+  {
+    id: "leon",
     nume: "Leon C. Negruzzi",
     perioada: "1840–1890",
     imagine: "/leon-negruzzi.png",
@@ -32,6 +47,20 @@ const membri = [
     copii: "A fost căsătorit cu Anna Botezat și au avut șapte copii: Constantin, Suzana, Natalia, Anna, Maria, Mihai și Ella.",
   },
   {
+    id: "eliza",
+    nume: "Eliza Negruzzi",
+    perioada: "secolul XIX",
+    text: "Eliza Negruzzi a fost fiica lui Costache Negruzzi.",
+    copii: "S-a căsătorit cu Dumitru Mavrocordat.",
+  },
+  {
+    id: "nicolae",
+    nume: "Nicolae Negruzzi",
+    perioada: "copilărie",
+    text: "Nicolae Negruzzi a fost fiul lui Costache Negruzzi și al Mariei Gane. A murit de mic, răpus de holeră.",
+  },
+  {
+    id: "ella",
     nume: "Ella Negruzzi",
     perioada: "1876–1949",
     imagine: "/ela-negruzzi.jpeg",
@@ -39,6 +68,7 @@ const membri = [
     copii: "A fost căsătorită cu George Beldiman, de care a divorțat, nelăsând urmași.",
   },
   {
+    id: "mihai",
     nume: "Mihai Negruzzi",
     perioada: "1873–1958",
     imagine: "/mihai-negruzzi.jpeg",
@@ -46,11 +76,41 @@ const membri = [
     copii: "A fost căsătorit cu Lucia Miclescu și au avut trei copii: Leon Bob, Suzana și Maria-Marta.",
   },
   {
+    id: "leon-bob",
     nume: "Leon Bob Negruzzi",
     perioada: "1900–1987",
     imagine: "/leon-bob-negruzzi.png",
     text: "Leon Bob Negruzzi, fiul lui Mihai Negruzzi, a studiat Dreptul și s-a stabilit la Paris. A publicat volume de călătorii, romane și poezii și a tradus în franceză opere din literatura română.",
     copii: "A fost căsătorit de două ori: prima dată cu Aileen Frank, iar ulterior cu Marjorie Devanport, ambele de origine americană.",
+  },
+  {
+    id: "suzana",
+    nume: "Suzana Negruzzi",
+    perioada: "secolul XX",
+    imagine: "/13.jpeg",
+    text: "Suzana Negruzzi a fost fiica generalului Mihai Negruzzi și a Luciei Miclescu.",
+    copii: "A fost căsătorită cu Petre Grant și au avut o fiică: Irina Fotiade.",
+  },
+  {
+    id: "irina",
+    nume: "Irina Fotiade",
+    perioada: "secolul XX",
+    copii: "A fost căsătorită cu Dr. Bradu Fotiade și au avut un fiu: Matei Fotiade.",
+  },
+  {
+    id: "marta",
+    nume: "Maria-Marta Negruzzi",
+    perioada: "1903-1986",
+ imagine: "/12.png",
+    text: "Maria-Marta Negruzzi a fost fiica generalului Mihai Negruzzi și a Luciei Miclescu.",
+    copii: "A fost căsătorită cu Eduard Konya și au avut o fiică: Dana Konya Petrișor.",
+  },
+  {
+    id: "dana",
+    nume: "Dana Konya Petrișor",
+    perioada: "1937-2021",
+ imagine: "/11.png",
+    copii: "A fost căsătorită cu Marcel Petrișor.",
   },
 ];
 
@@ -101,7 +161,7 @@ const galerie = [
     descriere:
       "De la stânga la dreapta: Ella Negruzzi, actrița Marioara Voiculescu și Mihai Negruzzi la botezul Danei Ilinca Lucia, fiica Martei Negruzzi și a lui Eduard Konya.",
   },
-{
+  {
     titlu: "Inaugurarea primului muzeu Negruzzi (1986)",
     imagine: "/8.png",
     descriere:
@@ -110,6 +170,51 @@ const galerie = [
 ];
 
 export default function FamiliePage() {
+  const [selectat, setSelectat] = useState("costache");
+
+  const mergiLaMembru = (id: string) => {
+    setSelectat(id);
+
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({
+        behavior: "smooth",
+        block: "center",
+      });
+    }
+  };
+
+  const CardArbore = ({
+    id,
+    nume,
+    mic,
+  }: {
+    id: string;
+    nume: string;
+    mic?: string;
+  }) => (
+    <button
+      onClick={() => mergiLaMembru(id)}
+      className={`px-5 py-4 rounded-2xl shadow-lg border-2 min-w-[190px] transition hover:scale-105 ${
+        selectat === id
+          ? "bg-[#4a2f1f] text-white border-[#4a2f1f]"
+          : "bg-white text-[#3b2418] border-[#caa66a] hover:bg-[#f6ead9]"
+      }`}
+    >
+      <p className="font-bold">{nume}</p>
+      {mic && <p className="text-sm mt-1">{mic}</p>}
+    </button>
+  );
+
+  const CardInfo = ({ titlu, text }: { titlu: string; text: string }) => (
+    <div className="bg-[#f6ead9] border-2 border-[#caa66a] rounded-2xl px-5 py-4 min-w-[190px] text-center shadow-md">
+      <p className="font-bold">{titlu}</p>
+      <p className="text-sm mt-1">{text}</p>
+    </div>
+  );
+
+  const LinieV = () => <div className="w-[3px] h-8 bg-[#b08968]" />;
+
   return (
     <main className="min-h-screen bg-gradient-to-b from-[#faf7f2] to-[#f1e6d6] text-[#2f1d14]">
       <section className="max-w-7xl mx-auto px-8 py-10">
@@ -132,13 +237,157 @@ export default function FamiliePage() {
           </p>
         </div>
 
+        <section className="bg-[#fffdf8] rounded-[30px] shadow-xl border border-[#d9c5a1] p-8 mb-12">
+          <h2 className="text-4xl font-serif font-bold text-center mb-3">
+            Arbore genealogic interactiv
+          </h2>
+
+          <p className="text-center text-lg mb-8">
+            Apasă pe un nume pentru a vedea detaliile persoanei în cronologia de
+            mai jos.
+          </p>
+
+          <div className="overflow-x-auto pb-6">
+            <div className="min-w-[1200px] flex flex-col items-center">
+              <CardArbore id="dinu" nume="Dinu Negruți" mic="Sofia Hermeziu" />
+              <LinieV />
+
+              <CardArbore
+                id="costache"
+                nume="Costache Negruzzi"
+                mic="Maria Gane"
+              />
+              <LinieV />
+
+              <div className="w-[1000px] h-[3px] bg-[#b08968]" />
+
+              <div className="grid grid-cols-5 gap-6 mt-5">
+                <div className="flex flex-col items-center">
+                  <LinieV />
+                  <CardArbore
+                    id="iacob"
+                    nume="Iacob Negruzzi"
+                    mic="Anna Rosetti"
+                  />
+                </div>
+
+                <div className="flex flex-col items-center">
+                  <LinieV />
+                  <CardArbore
+                    id="leon"
+                    nume="Leon C. Negruzzi"
+                    mic="Anna Botezat"
+                  />
+                </div>
+
+                <div className="flex flex-col items-center">
+                  <LinieV />
+                  <CardArbore
+                    id="gheorghe"
+                    nume="Gheorghe Negruzzi"
+                    mic="Anna Sturdza"
+                  />
+                  <LinieV />
+                  <CardArbore
+                    id="margareta"
+                    nume="Margareta Negruzzi"
+                    mic="fiica lui Gheorghe"
+                  />
+                </div>
+
+                <div className="flex flex-col items-center">
+                  <LinieV />
+                  <CardArbore
+                    id="eliza"
+                    nume="Eliza Negruzzi"
+                    mic="Dumitru Mavrocordat"
+                  />
+                </div>
+
+                <div className="flex flex-col items-center">
+                  <LinieV />
+                  <CardArbore id="nicolae" nume="Nicolae Negruzzi" mic="† copil" />
+                </div>
+              </div>
+
+              <div className="mt-10 flex flex-col items-center">
+                <p className="font-bold text-[#7a4a22] mb-3">
+                  Descendenți ai lui Leon C. Negruzzi
+                </p>
+
+                <div className="w-[460px] h-[3px] bg-[#b08968]" />
+
+                <div className="grid grid-cols-2 gap-6 mt-5">
+                  <CardArbore
+                    id="mihai"
+                    nume="Mihai Negruzzi"
+                    mic="Lucia Miclescu"
+                  />
+                  <CardArbore
+                    id="ella"
+                    nume="Ella Negruzzi"
+                    mic="George Beldiman"
+                  />
+                </div>
+              </div>
+
+              <div className="mt-10 flex flex-col items-center">
+                <p className="font-bold text-[#7a4a22] mb-3">
+                  Descendenți ai lui Mihai Negruzzi
+                </p>
+
+                <div className="w-[700px] h-[3px] bg-[#b08968]" />
+
+                <div className="grid grid-cols-3 gap-8 mt-5">
+                  <CardArbore
+                    id="leon-bob"
+                    nume="Leon Bob Negruzzi"
+                    mic="Aileen Frank / Marjorie Devanport"
+                  />
+
+                  <div className="flex flex-col items-center">
+                    <CardArbore
+                      id="suzana"
+                      nume="Suzana Negruzzi"
+                      mic="Petre Grant"
+                    />
+                    <LinieV />
+                    <CardArbore 
+                      id="irina" 
+                      nume="Irina Fotiade" 
+                      mic="Dr. Bradu Fotiade"
+                     />
+                  </div>
+
+                  <div className="flex flex-col items-center">
+                    <CardArbore
+                      id="marta"
+                      nume="Maria-Marta Negruzzi"
+                      mic="Eduard Konya"
+                    />
+                    <LinieV />
+                    <CardArbore
+                      id="dana"
+                      nume="Dana Konya Petrișor"
+                      mic="Marcel Petrișor"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
         <div className="space-y-8">
           {membri.map((membru, index) => (
             <div
+              id={membru.id}
               key={membru.nume}
-              className={`bg-[#fffdf8] rounded-[30px] shadow-xl border border-[#d9c5a1] overflow-hidden ${
-                membru.imagine ? "grid md:grid-cols-[280px_1fr]" : ""
-              }`}
+              className={`bg-[#fffdf8] rounded-[30px] shadow-xl border overflow-hidden transition scroll-mt-20 ${
+                selectat === membru.id
+                  ? "border-[#7a4a22] ring-4 ring-[#c58a3a]/40"
+                  : "border-[#d9c5a1]"
+              } ${membru.imagine ? "grid md:grid-cols-[280px_1fr]" : ""}`}
             >
               {membru.imagine && (
                 <div className="relative bg-[#f8f3ec]">
@@ -169,9 +418,7 @@ export default function FamiliePage() {
                   {membru.nume}
                 </h2>
 
-                <p className="text-lg leading-relaxed mb-4">
-                  {membru.text}
-                </p>
+                <p className="text-lg leading-relaxed mb-4">{membru.text}</p>
 
                 {membru.copii && (
                   <div className="bg-[#f6ead9] border-l-8 border-[#c58a3a] rounded-2xl p-5 mt-5">
