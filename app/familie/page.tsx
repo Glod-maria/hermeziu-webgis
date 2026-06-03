@@ -7,14 +7,14 @@ const membri = [
     id: "dinu",
     nume: "Dinu Negruți",
     perioada: "începutul familiei la Hermeziu",
-    text: "Dinu Negruți, tatăl lui Costache Negruzzi, provenea dintr-o familie de răzeși din zona Odobeștilor. În anul 1807 s-a căsătorit cu Sofia Hermeziu și a primit ca zestre moșia Trifești-Vechi, actualul Hermeziu.",
+    text: "Dinu Negruți, tatăl lui Constantin Negruzzi, provenea dintr-o familie de răzeși din zona Odobeștilor. În anul 1807 s-a căsătorit cu Sofia Hermeziu și a primit ca zestre moșia Trifești-Vechi, actualul Hermeziu.",
   },
   {
-    id: "costache",
-    nume: "Costache Negruzzi",
+    id: "Constantin",
+    nume: "Constantin Negruzzi",
     perioada: "1808–1868",
-    imagine: "/costache-negruzzi.png",
-    text: "Costache Negruzzi s-a născut în 1808, la Hermeziu. A fost scriitor, om politic și unul dintre întemeietorii prozei moderne românești. A construit biserica familiei în anul căsătoriei sale, 1839.",
+    imagine: "/Costache-negruzzi.png",
+    text: "Constantin Negruzzi s-a născut în 1808, la Hermeziu. A fost scriitor, om politic și unul dintre întemeietorii prozei moderne românești. A construit biserica familiei în anul căsătoriei sale, 1839.",
     copii: "A fost căsătorit cu Maria Gane și au avut cinci copii: Iacob, Leon, Gheorghe, Eliza și Nicolae. Nicolae nu apare în arborele genealogic deoarece a murit de mic, răpus de holeră.",
   },
   {
@@ -22,14 +22,14 @@ const membri = [
     nume: "Iacob Negruzzi",
     perioada: "1842–1932",
     imagine: "/iacob-negruzzi.png",
-    text: "Iacob Negruzzi a fost fiul lui Costache Negruzzi. A fost profesor de drept, membru fondator al societății Junimea și conducător al revistei „Convorbiri literare”. În anul 1870 a construit școala din satul Hermeziu.",
+    text: "Iacob Negruzzi a fost fiul lui Constantin Negruzzi. A fost profesor de drept, membru fondator al societății Junimea și conducător al revistei „Convorbiri literare”. În anul 1870 a construit școala din satul Hermeziu.",
     copii: "A fost căsătorit cu Anna Rosetti și nu au avut descendenți.",
   },
   {
     id: "gheorghe",
     nume: "Gheorghe Negruzzi",
     perioada: "1849–1880",
-    text: "Gheorghe Negruzzi a fost fiul lui Costache Negruzzi. Și-a luat doctoratul în drept la Berlin, a profesat avocatura, fiind apreciat ca jurist. A fost membru al societății Junimea de la înființarea ei, dar nu a activat ca scriitor. A murit de tânăr și este îngropat în curtea bisericii din sat.",
+    text: "Gheorghe Negruzzi a fost fiul lui Constantin Negruzzi. Și-a luat doctoratul în drept la Berlin, a profesat avocatura, fiind apreciat ca jurist. A fost membru al societății Junimea de la înființarea ei, dar nu a activat ca scriitor. A murit de tânăr și este îngropat în curtea bisericii din sat.",
     copii: "A fost căsătorit cu Anna Sturdza și au avut un singur copil: Margareta Negruzzi.",
   },
   {
@@ -43,21 +43,21 @@ const membri = [
     nume: "Leon C. Negruzzi",
     perioada: "1840–1890",
     imagine: "/leon-negruzzi.png",
-    text: "Leon C. Negruzzi, fiul lui Costache Negruzzi, a fost jurist, scriitor, membru al Junimii și primar al municipiului Iași între anii 1883–1886.",
+    text: "Leon C. Negruzzi, fiul lui Constantin Negruzzi, a fost jurist, scriitor, membru al Junimii și primar al municipiului Iași între anii 1883–1886.",
     copii: "A fost căsătorit cu Anna Botezat și au avut șapte copii: Constantin, Suzana, Natalia, Anna, Maria, Mihai și Ella.",
   },
   {
     id: "eliza",
     nume: "Eliza Negruzzi",
     perioada: "secolul XIX",
-    text: "Eliza Negruzzi a fost fiica lui Costache Negruzzi.",
+    text: "Eliza Negruzzi a fost fiica lui Constantin Negruzzi.",
     copii: "S-a căsătorit cu Dumitru Mavrocordat.",
   },
   {
     id: "nicolae",
     nume: "Nicolae Negruzzi",
     perioada: "copilărie",
-    text: "Nicolae Negruzzi a fost fiul lui Costache Negruzzi și al Mariei Gane. A murit de mic, răpus de holeră.",
+    text: "Nicolae Negruzzi a fost fiul lui Constantin Negruzzi și al Mariei Gane. A murit de mic, răpus de holeră.",
   },
   {
     id: "ella",
@@ -94,7 +94,7 @@ const membri = [
   {
     id: "irina",
     nume: "Irina Fotiade",
-    perioada: "secolul XX",
+    perioada: "1927-2006",
     copii: "A fost căsătorită cu Dr. Bradu Fotiade și au avut un fiu: Matei Fotiade.",
   },
   {
@@ -109,12 +109,18 @@ const membri = [
     id: "dana",
     nume: "Dana Konya Petrișor",
     perioada: "1937-2021",
- imagine: "/11.png",
+ imagine: "/dana.png",
     copii: "A fost căsătorită cu Marcel Petrișor.",
   },
 ];
 
 const galerie = [
+ {
+    titlu: "Maria Negruzzi",
+    imagine: "/gane.jpeg",
+    descriere:
+      "Maria Negruzzi (1820–1900) a fost fiica agăi Dumitrache Gane și soția lui Constantin Negruzzi. Cei doi s-au căsătorit la 6 iulie 1839. Maria Negruzzi a fost partenera de viață a marelui scriitor și a contribuit la viața familiei Negruzzi de la Hermeziu, unde au crescut împreună cei cinci copii ai lor: Iacob, Leon, Gheorghe, Eliza și Nicolae.",
+  },
   {
     titlu: "Iacob Negruzzi la Hermeziu",
     imagine: "/1.jpeg",
@@ -122,15 +128,22 @@ const galerie = [
       "Iacob Negruzzi pe treptele conacului familiei Negruzzi din Hermeziu.",
   },
   {
-    titlu: "Anna Negruzzi",
+    titlu: "Anna Negruzzi, soția lui Leon C. Negruzzi",
     imagine: "/2.jpeg",
-    descriere: "Anna Negruzzi, soția lui Leon C. Negruzzi.",
+  },
+  {
+    titlu: "Anna Negruzzi, soția lui Gheorghe C. Negruzzi",
+    imagine: "/sturza.jpeg",
   },
   {
     titlu: "Mihai și Lucia Negruzzi",
     imagine: "/3.jpeg",
     descriere:
       "Generalul Mihai Negruzzi alături de soția sa, Lucia Miclescu.",
+  },
+ {
+    titlu: "Leon, Mihai (fiul lui Leon) și Iacob Negruzzi",
+    imagine: "/fiu.jpeg",
   },
   {
     titlu: "Mihai Negruzzi cu nepoții",
@@ -170,7 +183,7 @@ const galerie = [
 ];
 
 export default function FamiliePage() {
-  const [selectat, setSelectat] = useState("costache");
+  const [selectat, setSelectat] = useState("Constantin");
 
   const mergiLaMembru = (id: string) => {
     setSelectat(id);
@@ -253,8 +266,8 @@ export default function FamiliePage() {
               <LinieV />
 
               <CardArbore
-                id="costache"
-                nume="Costache Negruzzi"
+                id="Constantin"
+                nume="Constantin Negruzzi"
                 mic="Maria Gane"
               />
               <LinieV />
