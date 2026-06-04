@@ -1,0 +1,13 @@
+{
+"type": "FeatureCollection",
+"name": "mormintep",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "fid": 1 }, "geometry": { "type": "Point", "coordinates": [ 27.552124412739349, 47.442777991146698 ] } },
+{ "type": "Feature", "properties": { "fid": 2 }, "geometry": { "type": "Point", "coordinates": [ 27.552186970795038, 47.44278856855864 ] } },
+{ "type": "Feature", "properties": { "fid": 3 }, "geometry": { "type": "Point", "coordinates": [ 27.552239102508118, 47.44279209436214 ] } },
+{ "type": "Feature", "properties": { "fid": 4 }, "geometry": { "type": "Point", "coordinates": [ 27.552056641512348, 47.442882002271709 ] } },
+{ "type": "Feature", "properties": { "fid": 5 }, "geometry": { "type": "Point", "coordinates": [ 27.552124412739349, 47.442890816764383 ] } },
+{ "type": "Feature", "properties": { "fid": 6 }, "geometry": { "type": "Point", "coordinates": [ 27.552186970795038, 47.442896105459276 ] } }
+]
+}

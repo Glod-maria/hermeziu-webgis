@@ -1,0 +1,8 @@
+{
+"type": "FeatureCollection",
+"name": "limita-mic",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "fid": 1 }, "geometry": { "type": "Polygon", "coordinates": [ [ [ 27.55193673857227, 47.442538235905701 ], [ 27.551983657114043, 47.442328449173502 ], [ 27.552327726420341, 47.442316108751427 ], [ 27.552372038376458, 47.442536472995471 ], [ 27.55193673857227, 47.442538235905701 ] ] ] } }
+]
+}

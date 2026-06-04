@@ -76,29 +76,6 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="max-w-7xl mx-auto px-8 py-10">
-        <div className="grid md:grid-cols-4 gap-5">
-          <div className="bg-[#fffdf8] rounded-3xl shadow p-6 border border-[#d9c5a1]">
-            <p className="text-4xl font-bold text-[#8b5a2b]">3</p>
-            <p className="font-bold">Obiective culturale</p>
-          </div>
-
-          <div className="bg-[#fffdf8] rounded-3xl shadow p-6 border border-[#d9c5a1]">
-            <p className="text-4xl font-bold text-[#8b5a2b]">10+</p>
-            <p className="font-bold">Fotografii</p>
-          </div>
-
-          <div className="bg-[#fffdf8] rounded-3xl shadow p-6 border border-[#d9c5a1]">
-            <p className="text-4xl font-bold text-[#8b5a2b]">1</p>
-            <p className="font-bold">Tur virtual 3D</p>
-          </div>
-
-          <div className="bg-[#fffdf8] rounded-3xl shadow p-6 border border-[#d9c5a1]">
-            <p className="text-4xl font-bold text-[#8b5a2b]">GIS</p>
-            <p className="font-bold">Date vectorizate</p>
-          </div>
-        </div>
-      </section>
 
       <section id="harta" className="max-w-7xl mx-auto px-8 py-10">
         <div className="bg-[#fffdf8] rounded-[34px] shadow-2xl border border-[#d9c5a1] p-6">
@@ -140,10 +117,13 @@ export default function Home() {
 
       <footer className="bg-[#4a2f1f] text-white mt-16">
         <div className="max-w-7xl mx-auto px-8 py-8 flex justify-between flex-wrap gap-4">
-          <p>
-            Realizat pentru promovarea patrimoniului cultural al familiei
-            Negruzzi din Hermeziu.
-          </p>
+<p>
+  Aplicație WebGIS realizată de <strong>Glod Adina-Elena</strong>,
+  în cadrul lucrării de disertație pentru programul de master
+  <strong> Geomatică și Cartografie</strong>,
+  Facultatea de Hidrotehnică, Geodezie și Ingineria Mediului,
+  Universitatea Tehnică „Gheorghe Asachi” din Iași.
+</p>
 
           <p className="text-[#d9b46f]">
             Next.js • Leaflet • QGIS • GeoJSON
