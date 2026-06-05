@@ -266,7 +266,7 @@ export default function MapHermeziu() {
                   "Constantin Negruzzi",
                   "1808–1868",
                   "Scriitor și ctitor al bisericii din Hermeziu.",
-                  "/con.jpeg"
+                  "/constantin.jpeg"
                 )
               )
             }
