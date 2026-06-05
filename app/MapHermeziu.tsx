@@ -511,19 +511,19 @@ minHeight: "420px",
         </div>
 
 <div
-  className="hidden md:block"
+  className="block"
   style={{
     position: "absolute",
-    bottom: "18px",
-    right: "18px",
+    bottom: "10px",
+    right: "10px",
     zIndex: 1000,
             background: "rgba(255,255,255,0.94)",
-            padding: "14px 16px",
-            borderRadius: "16px",
+            padding: "10px",
+            borderRadius: "12px",
             boxShadow: "0 6px 18px rgba(0,0,0,0.30)",
-            fontSize: "14px",
-            lineHeight: "1.85",
-            maxWidth: "330px",
+            fontSize: "12px",
+            lineHeight: "1.6",
+            maxWidth: "140px",
             color: "#1f2937",
           }}
         >
