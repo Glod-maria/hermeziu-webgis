@@ -170,7 +170,8 @@ export default function MapHermeziu() {
         zoom={18}
         zoomControl={false}
         style={{
-          height: "560px",
+          height: "70vh",
+minHeight: "420px",
           width: "100%",
           borderRadius: "20px",
           overflow: "hidden",
@@ -460,12 +461,13 @@ export default function MapHermeziu() {
           </Marker>
         )}
 
-        <div
-          style={{
-            position: "absolute",
-            top: "18px",
-            left: "18px",
-            zIndex: 1000,
+<div
+  className="hidden md:block"
+  style={{
+    position: "absolute",
+    top: "18px",
+    left: "18px",
+    zIndex: 1000,
             background: "rgba(255,255,255,0.95)",
             padding: "12px 14px",
             borderRadius: "14px",
@@ -508,12 +510,13 @@ export default function MapHermeziu() {
           </label>
         </div>
 
-        <div
-          style={{
-            position: "absolute",
-            bottom: "18px",
-            right: "18px",
-            zIndex: 1000,
+<div
+  className="hidden md:block"
+  style={{
+    position: "absolute",
+    bottom: "18px",
+    right: "18px",
+    zIndex: 1000,
             background: "rgba(255,255,255,0.94)",
             padding: "14px 16px",
             borderRadius: "16px",
