@@ -125,6 +125,71 @@ export default function Home() {
           </div>
         </div>
       </section>
+<section className="max-w-7xl mx-auto px-4 md:px-8 py-6">
+  <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+
+    <div className="bg-[#fffdf8] rounded-3xl p-6 shadow-xl border border-[#d9c5a1] text-center">
+      <p className="text-5xl mb-3">🏛️</p>
+      <p className="text-3xl font-bold text-[#8b5a2b]">1995</p>
+      <p>Muzeul „Constantin Negruzzi”</p>
+    </div>
+
+    <div className="bg-[#fffdf8] rounded-3xl p-6 shadow-xl border border-[#d9c5a1] text-center">
+      <p className="text-5xl mb-3">⛪</p>
+      <p className="text-3xl font-bold text-[#8b5a2b]">1839</p>
+      <p>Biserică cu hramul Sfinții „Constantin și Elena”</p>
+    </div>
+
+    <div className="bg-[#fffdf8] rounded-3xl p-6 shadow-xl border border-[#d9c5a1] text-center">
+      <p className="text-5xl mb-3">🏫</p>
+      <p className="text-3xl font-bold text-[#8b5a2b]">1870</p>
+      <p>Școala construită de Iacob Negruzzi</p>
+    </div>
+
+    <div className="bg-[#fffdf8] rounded-3xl p-6 shadow-xl border border-[#d9c5a1] text-center">
+      <p className="text-5xl mb-3">🪦</p>
+      <p className="text-3xl font-bold text-[#8b5a2b]">6</p>
+      <p>Monumente funerare</p>
+    </div>
+
+  </div>
+</section>
+
+<section className="max-w-7xl mx-auto px-4 md:px-8 py-8">
+  <div className="bg-[#fffdf8] rounded-[34px] shadow-xl border border-[#d9c5a1] p-6 md:p-8">
+
+    <h2 className="text-3xl md:text-4xl font-serif font-bold mb-8 text-center">
+      Patrimoniul de la Hermeziu
+    </h2>
+
+    <div className="overflow-x-auto">
+      <div className="flex gap-6 w-max">
+
+        <img
+          src="/muzeu.jpeg"
+          className="w-[500px] h-[350px] object-cover rounded-[30px] shadow-xl"
+        />
+
+        <img
+          src="/biserica.jpeg"
+          className="w-[500px] h-[350px] object-cover rounded-[30px] shadow-xl"
+        />
+
+        <img
+          src="/scoala.png"
+          className="w-[500px] h-[350px] object-cover rounded-[30px] shadow-xl"
+        />
+
+        <img
+          src="/cruce.jpeg"
+          className="w-[500px] h-[350px] object-cover rounded-[30px] shadow-xl"
+        />
+
+      </div>
+    </div>
+
+  </div>
+</section>
 
       <section id="harta" className="max-w-7xl mx-auto px-4 md:px-8 py-8 md:py-10">
         <div className="bg-[#fffdf8] rounded-[26px] md:rounded-[34px] shadow-2xl border border-[#d9c5a1] p-4 md:p-6">
