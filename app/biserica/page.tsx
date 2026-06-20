@@ -84,7 +84,19 @@ M-am dus după ai mei străbuni
 
   const galerie = [
     {
+      src: "/veche.jpeg",
+      alt: "Biserica",
+    },
+    {
+      src: "/biss.jpeg",
+      alt: "Biserica",
+    },
+{
       src: "/hero-biserica.jpeg",
+      alt: "Poarta de intrare spre biserica din Hermeziu",
+    },
+    {
+      src: "/b.jpeg",
       alt: "Poarta de intrare spre biserica din Hermeziu",
     },
     {
@@ -92,12 +104,36 @@ M-am dus după ai mei străbuni
       alt: "Biserica Sfinții Împărați Constantin și Elena din Hermeziu",
     },
     {
-      src: "/interior-biserica.jpeg",
-      alt: "Interiorul bisericii din Hermeziu",
+      src: "/e.jpeg",
+      alt: "Ioana Rosetti",
+    },
+    {
+      src: "/ioana.jpeg",
+      alt: "Ioana Rosetti",
     },
     {
       src: "/morminte.jpeg",
       alt: "Vedere asupra necropolei familiei Negruzzi",
+    },
+    {
+      src: "/interior-biserica.jpeg",
+      alt: "Interiorul bisericii din Hermeziu",
+    },
+    {
+      src: "/f.jpeg",
+      alt: "Ioana Rosetti",
+    },
+    {
+      src: "/a.jpeg",
+      alt: "Poarta de intrare spre biserica din Hermeziu",
+    },
+    {
+      src: "/d.jpeg",
+      alt: "Ioana Rosetti",
+    },
+    {
+      src: "/c.jpeg",
+      alt: "Ioana Rosetti",
     },
   ];
 
@@ -397,33 +433,37 @@ M-am dus după ai mei străbuni
         </div>
       </section>
 
-      <section className="max-w-7xl mx-auto px-8 py-12">
-        <div className="bg-[#fffdf8] rounded-[36px] shadow-xl p-8 md:p-10 border border-[#d9c5a1]">
-          <p className="uppercase tracking-[0.25em] text-sm text-[#8b5a2b] mb-4 text-center">
-            Imagini
-          </p>
+     <section className="max-w-7xl mx-auto px-8 py-12">
+  <div className="bg-[#fffdf8] rounded-[36px] shadow-xl p-8 md:p-10 border border-[#d9c5a1]">
 
-          <h2 className="text-4xl md:text-5xl font-serif font-bold text-center mb-10">
-            Galerie foto
-          </h2>
+    <p className="uppercase tracking-[0.25em] text-sm text-[#8b5a2b] mb-4 text-center">
+      Imagini
+    </p>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6">
-            {galerie.map((foto) => (
-              <div
-                key={foto.src}
-                className="rounded-[30px] overflow-hidden shadow-xl border border-[#d9c5a1] bg-[#efe3d0] p-3"
-              >
-                <img
-                  src={foto.src}
-                  alt={foto.alt}
-                  className="w-full h-[300px] object-contain rounded-2xl hover:scale-105 transition duration-700"
-                />
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+    <h2 className="text-4xl md:text-5xl font-serif font-bold text-center mb-10">
+      Galerie foto
+    </h2>
 
+<div className="overflow-x-auto">
+  <div className="flex gap-6 pb-4 w-max">
+    {galerie.map((foto) => (
+      <div
+        key={foto.src}
+        className="w-[500px] h-[350px] bg-[#f8f3ec] rounded-[30px] shadow-xl border border-[#d9c5a1] flex items-center justify-center"
+      >
+        <img
+          src={foto.src}
+          alt={foto.alt}
+          className="max-w-full max-h-full object-contain rounded-[20px]"
+        />
+      </div>
+    ))}
+  </div>
+</div>
+
+  </div>
+</section>         
+      
       <section className="max-w-7xl mx-auto px-8 py-10 pb-20">
         <div className="bg-gradient-to-r from-[#3d2619] to-[#6b4a32] text-white rounded-[36px] shadow-xl p-8 md:p-10">
           <h2 className="text-4xl font-serif font-bold mb-6">
