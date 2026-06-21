@@ -27,7 +27,7 @@ const bisericaPosition: [number, number] = [47.442852, 27.552188];
 const scoalaPosition: [number, number] = [47.443131, 27.5521];
 const primariePosition: [number, number] = [47.443394, 27.551825];
 const conacmicPosition: [number, number] = [47.442431, 27.552152];
-const poartaMuzeu: [number, number] = [47.442919, 27.551661];
+const poartaMuzeu: [number, number] = [47.442414, 27.551825];
 
 function emojiIcon(emoji: string, size = 30) {
   return L.divIcon({
@@ -109,20 +109,28 @@ export default function MapHermeziu() {
         const userLat = position.coords.latitude;
         const userLng = position.coords.longitude;
 
-        setUserPosition([userLat, userLng]);
+        setUserPosition([47.442250, 27.550644]);
 
-        fetch(
-          `https://router.project-osrm.org/route/v1/driving/${userLng},${userLat};${poartaMuzeu[1]},${poartaMuzeu[0]}?overview=full&geometries=geojson`
-        )
-          .then((res) => res.json())
-          .then((data) => {
-            const coordinates = data.routes[0].geometry.coordinates;
-            const traseu = coordinates.map((coord: [number, number]) => [
-              coord[1],
-              coord[0],
-            ]);
-            setRoute(traseu);
-          });
+        const punctIntrare: [number, number] = [47.443692, 27.545464];
+
+fetch(
+  `https://router.project-osrm.org/route/v1/driving/${userLng},${userLat};${punctIntrare[1]},${punctIntrare[0]}?overview=full&geometries=geojson`
+)
+  .then((res) => res.json())
+  .then((data) => {
+    const coordinates = data.routes[0].geometry.coordinates;
+
+    const traseu = coordinates.map((coord: [number, number]) => [
+      coord[1],
+      coord[0],
+    ]);
+
+    setRoute([
+      ...traseu,
+      [47.443692, 27.551181],
+      [47.442414, 27.551825],
+    ]);
+});
       },
       () => {
         alert("Nu ai permis accesul la locație.");
@@ -130,7 +138,7 @@ export default function MapHermeziu() {
     );
   }
 
-  function popupMormant(
+function popupMormant(
     nume: string,
     ani: string,
     descriere: string,

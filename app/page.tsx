@@ -100,7 +100,7 @@ export default function Home() {
               <p className="text-[#5d4a3a] leading-relaxed">
                 Dinu Negruzzi s-a căsătorit cu
                 <strong> Sofia Hermeziu</strong>, mama scriitorului
-                <strong> Costache Negruzzi</strong>. După moartea timpurie a
+                <strong> Constantin Negruzzi</strong>. După moartea timpurie a
                 acesteia, satul a primit numele <strong>Hermeziu</strong> în
                 memoria ei.
               </p>
