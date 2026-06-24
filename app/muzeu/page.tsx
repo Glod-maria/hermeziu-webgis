@@ -283,10 +283,7 @@ export default function MuzeuPage() {
           </h2>
 
           <p className="text-xl leading-relaxed">
-            Muzeul este integrat prin localizare GPS, contur vectorizat în QGIS,
-            fișiere GeoJSON, galerie foto și tur virtual 3D. Această abordare
-            transformă patrimoniul cultural de la Hermeziu într-o experiență
-            digitală interactivă.
+           Muzeul este integrat în aplicația WebGIS prin utilizarea coordonatelor GPS, a datelor spațiale vectoriale prelucrate în QGIS, a fișierelor GeoJSON, a galeriei foto, a turului virtual și a modelului 3D interactiv al flautului lui Iacob Negruzzi. Prin combinarea acestor tehnologii, patrimoniul cultural de la Hermeziu este transpus într-un mediu digital interactiv, accesibil publicului larg.
           </p>
         </div>
       </section>
