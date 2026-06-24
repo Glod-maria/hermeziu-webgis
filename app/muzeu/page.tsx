@@ -1,3 +1,7 @@
+"use client";
+
+import Flaut3D from "../components/Flaut3D";
+
 export default function MuzeuPage() {
   const timeline = [
     ["1807", "Dinu Negruți primește moșia de la Hermeziu."],
@@ -25,7 +29,7 @@ export default function MuzeuPage() {
     {
       titlu: "Ceasornic de soare",
       imagine: "/ceas.jpeg",
-      text: "Piesă autentică ce a aparținut lui Constantin Negruzzi. Pe cadran este inscripționat mesajul „Umbra mea arată orele cu care trec”.",
+      text: "Piesă autentică ce a aparținut lui Constantin Negruzzi și care era amplasată în curtea conacului pe vremea când familia locuia la Hermeziu.",
     },
   ];
 
@@ -226,6 +230,27 @@ export default function MuzeuPage() {
             </p>
           </div>
         </div>
+<section className="max-w-7xl mx-auto px-8 py-10">
+  <div className="bg-[#fffdf8] rounded-[30px] shadow-xl border border-[#d9c5a1] p-10">
+
+    <p className="uppercase tracking-[0.3em] text-sm text-[#8b5a2b] mb-4 text-center">
+      Obiect digitalizat
+    </p>
+
+    <h2 className="text-4xl md:text-5xl font-serif font-bold text-center mb-4">
+      Model 3D al flautului lui Iacob Negruzzi
+    </h2>
+
+    <p className="text-center text-lg max-w-3xl mx-auto mb-8">
+      Descoperă flautul lui Iacob Negruzzi într-o reprezentare tridimensională interactivă, realizată pentru valorificarea digitală a patrimoniului muzeal.
+    </p>
+
+    <div className="h-[600px] rounded-3xl overflow-hidden border border-[#d9c5a1]">
+      <Flaut3D />
+    </div>
+
+  </div>
+</section>
       </section>
 
       <section className="max-w-7xl mx-auto px-8 py-10">
