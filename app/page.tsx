@@ -116,7 +116,7 @@ export default function Home() {
               </h3>
 
               <p className="text-[#5d4a3a] leading-relaxed">
-                În <strong>1969</strong>, localitatea a fost redenumită
+                În <strong>1969</strong>, localitatea avea denumirea de 
                 <strong> Lunca Prut</strong>, datorită amplasării în lunca
                 râului Prut. În <strong>1996</strong>, satul a revenit la
                 denumirea istorică de <strong>Hermeziu</strong>.
