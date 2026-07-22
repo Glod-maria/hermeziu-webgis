@@ -234,7 +234,7 @@ export default function Home() {
           </p>
 
           <p className="text-[#d9b46f] text-sm md:text-base">
-            Next.js • Leaflet • QGIS • GeoJSON
+            Next.js • Leaflet • QGIS • GeoJSON • Polycam
           </p>
         </div>
       </footer>
