@@ -200,11 +200,11 @@ export default function FamiliePage() {
   const CardArbore = ({
     id,
     nume,
-    mic,
+    partener,
   }: {
     id: string;
     nume: string;
-    mic?: string;
+    partener?: string;
   }) => (
     <button
       onClick={() => mergiLaMembru(id)}
@@ -215,7 +215,7 @@ export default function FamiliePage() {
       }`}
     >
       <p className="font-bold">{nume}</p>
-      {mic && <p className="text-sm mt-1">{mic}</p>}
+      {partener && <p className="text-sm mt-1">{partener}</p>}
     </button>
   );
 
@@ -262,13 +262,13 @@ export default function FamiliePage() {
 
           <div className="overflow-x-auto pb-6">
             <div className="min-w-[1200px] flex flex-col items-center">
-              <CardArbore id="dinu" nume="Dinu Negruți" mic="Sofia Hermeziu" />
+              <CardArbore id="dinu" nume="Dinu Negruți" partener="Sofia Hermeziu" />
               <LinieV />
 
               <CardArbore
                 id="Constantin"
                 nume="Constantin Negruzzi"
-                mic="Maria Gane"
+                partener="Maria Gane"
               />
               <LinieV />
 
@@ -280,7 +280,7 @@ export default function FamiliePage() {
                   <CardArbore
                     id="iacob"
                     nume="Iacob Negruzzi"
-                    mic="Anna Rosetti"
+                    partener="Anna Rosetti"
                   />
                 </div>
 
@@ -289,7 +289,7 @@ export default function FamiliePage() {
                   <CardArbore
                     id="leon"
                     nume="Leon C. Negruzzi"
-                    mic="Anna Botezat"
+                    partener="Anna Botezat"
                   />
                 </div>
 
@@ -298,13 +298,13 @@ export default function FamiliePage() {
                   <CardArbore
                     id="gheorghe"
                     nume="Gheorghe Negruzzi"
-                    mic="Anna Sturdza"
+                    partener="Anna Sturdza"
                   />
                   <LinieV />
                   <CardArbore
                     id="margareta"
                     nume="Margareta Negruzzi"
-                    mic="fiica lui Gheorghe"
+                    partener="fiica lui Gheorghe"
                   />
                 </div>
 
@@ -313,13 +313,13 @@ export default function FamiliePage() {
                   <CardArbore
                     id="eliza"
                     nume="Eliza Negruzzi"
-                    mic="Dumitru Mavrocordat"
+                    partener="Dumitru Mavrocordat"
                   />
                 </div>
 
                 <div className="flex flex-col items-center">
                   <LinieV />
-                  <CardArbore id="nicolae" nume="Nicolae Negruzzi" mic="† copil" />
+                  <CardArbore id="nicolae" nume="Nicolae Negruzzi" partener="† copil" />
                 </div>
               </div>
 
@@ -334,12 +334,12 @@ export default function FamiliePage() {
                   <CardArbore
                     id="mihai"
                     nume="Mihai Negruzzi"
-                    mic="Lucia Miclescu"
+                    partener="Lucia Miclescu"
                   />
                   <CardArbore
                     id="ella"
                     nume="Ella Negruzzi"
-                    mic="George Beldiman"
+                    partener="George Beldiman"
                   />
                 </div>
               </div>
@@ -355,20 +355,20 @@ export default function FamiliePage() {
                   <CardArbore
                     id="leon-bob"
                     nume="Leon Bob Negruzzi"
-                    mic="Aileen Frank / Marjorie Devanport"
+                    partener="Aileen Frank / Marjorie Devanport"
                   />
 
                   <div className="flex flex-col items-center">
                     <CardArbore
                       id="suzana"
                       nume="Suzana Negruzzi"
-                      mic="Petre Grant"
+                      partener="Petre Grant"
                     />
                     <LinieV />
                     <CardArbore 
                       id="irina" 
                       nume="Irina Fotiade" 
-                      mic="Dr. Bradu Fotiade"
+                      partener="Dr. Bradu Fotiade"
                      />
                   </div>
 
@@ -376,13 +376,13 @@ export default function FamiliePage() {
                     <CardArbore
                       id="marta"
                       nume="Maria-Marta Negruzzi"
-                      mic="Eduard Konya"
+                      partener="Eduard Konya"
                     />
                     <LinieV />
                     <CardArbore
                       id="dana"
                       nume="Dana Konya Petrișor"
-                      mic="Marcel Petrișor"
+                      partener="Marcel Petrișor"
                     />
                   </div>
                 </div>

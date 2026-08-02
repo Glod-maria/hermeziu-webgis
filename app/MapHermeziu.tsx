@@ -58,7 +58,7 @@ const conacmicIcon = emojiIcon("🏡", 29);
 const mormantIcon = emojiIcon("🪦", 18);
 
 export default function MapHermeziu() {
-  const [limitaMuzeuGeoJson, setLimitaMuzeuGeoJson] = useState<any>(null);
+  const [contGeoJson, setContGeoJson] = useState<any>(null);
   const [muzeuGeoJson, setMuzeuGeoJson] = useState<any>(null);
   const [bisericaGeoJson, setBisericaGeoJson] = useState<any>(null);
   const [scoalaGeoJson, setScoalaGeoJson] = useState<any>(null);
@@ -83,7 +83,7 @@ export default function MapHermeziu() {
   const [showMorminte, setShowMorminte] = useState(true);
 
   useEffect(() => {
-    fetch("/limita-muzeu.geojson").then((res) => res.json()).then(setLimitaMuzeuGeoJson);
+    fetch("/cont.geojson").then((res) => res.json()).then(setContGeoJson);
     fetch("/muzeu.gpkg.geojson").then((res) => res.json()).then(setMuzeuGeoJson);
     fetch("/biserica.geojson").then((res) => res.json()).then(setBisericaGeoJson);
     fetch("/scoalap.geojson").then((res) => res.json()).then(setScoalaGeoJson);
@@ -193,9 +193,9 @@ minHeight: "420px",
           url="https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}"
         />
 
-        {showMuzeu && limitaMuzeuGeoJson && (
+        {showMuzeu && contGeoJson && (
           <GeoJSON
-            data={limitaMuzeuGeoJson}
+            data={contGeoJson}
             style={{
               color: "#2563eb",
               weight: 3,
