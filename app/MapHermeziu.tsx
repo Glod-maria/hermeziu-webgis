@@ -52,7 +52,7 @@ function emojiIcon(emoji: string, size = 30) {
 }
 
 const muzeuIcon = emojiIcon("🏛️", 30);
-const bisericaIcon = emojiIcon("⛪", 30);
+const bisericaIcon = emojiIcon("⛪", 25);
 const scoalaIcon = emojiIcon("🏫", 30);
 const primarieIcon = emojiIcon("🏤", 29);
 const conacmicIcon = emojiIcon("🏡", 29);
@@ -62,11 +62,10 @@ export default function MapHermeziu() {
   // GeoJSON pentru limite și obiective
   const [contGeoJson, setContGeoJson] = useState<any>(null);
   const [muzeuGeoJson, setMuzeuGeoJson] = useState<any>(null);
-  const [bisericaGeoJson, setBisericaGeoJson] = useState<any>(null);
+  const [limitaBisericaGeoJson, setLimitaBisericaGeoJson] = useState<any>(null);
   const [scoalaGeoJson, setScoalaGeoJson] = useState<any>(null);
-  const [limScoalaGeoJson, setLimScoalaGeoJson] = useState<any>(null);
-  const [limitaConacMicGeoJson, setLimitaConacMicGeoJson] =
-    useState<any>(null);
+  const [limitaScoalapGeoJson, setLimitaScoalapGeoJson] = useState<any>(null);
+  const [limMagGeoJson, setLimMagGeoJson] = useState<any>(null);
 
   // GeoJSON pentru necropolă
   const [morcGeoJson, setMorcGeoJson] = useState<any>(null);
@@ -94,21 +93,21 @@ export default function MapHermeziu() {
       .then((res) => res.json())
       .then(setMuzeuGeoJson);
 
-    fetch("/biserica.geojson")
+    fetch("/limita-biserica.geojson")
       .then((res) => res.json())
-      .then(setBisericaGeoJson);
+      .then(setLimitaBisericaGeoJson);
 
     fetch("/scoalap.geojson")
       .then((res) => res.json())
       .then(setScoalaGeoJson);
 
-    fetch("/lim-scoala.geojson")
+    fetch("/limita-scoalap.geojson")
       .then((res) => res.json())
-      .then(setLimScoalaGeoJson);
+      .then(setLimitaScoalapGeoJson);
 
-    fetch("/limita-mic.geojson")
+    fetch("/lim-mag.geojson")
       .then((res) => res.json())
-      .then(setLimitaConacMicGeoJson);
+      .then(setLimMagGeoJson);
 
     fetch("/morc.geojson")
       .then((res) => res.json())
@@ -230,9 +229,9 @@ export default function MapHermeziu() {
         )}
 
         {/* BISERICĂ */}
-        {showBiserica && bisericaGeoJson && (
+        {showBiserica && limitaBisericaGeoJson && (
           <GeoJSON
-            data={bisericaGeoJson}
+            data={limitaBisericaGeoJson}
             style={{
               color: "#f59e0b",
               weight: 4,
@@ -243,9 +242,9 @@ export default function MapHermeziu() {
         )}
 
         {/* LIMITA ȘCOLII */}
-        {showScoala && limScoalaGeoJson && (
+        {showScoala && limitaScoalapGeoJson && (
           <GeoJSON
-            data={limScoalaGeoJson}
+            data={limitaScoalapGeoJson}
             style={{
               color: "#16a34a",
               weight: 3,
@@ -269,9 +268,9 @@ export default function MapHermeziu() {
         )}
 
         {/* CONAC MIC */}
-        {showConacMic && limitaConacMicGeoJson && (
+        {showConacMic && limMagGeoJson && (
           <GeoJSON
-            data={limitaConacMicGeoJson}
+            data={limMagGeoJson}
             style={{
               color: "#f97316",
               weight: 4,
