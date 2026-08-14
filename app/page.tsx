@@ -1,4 +1,5 @@
 import MapSection from "./MapSection";
+import Stele from "./components/Stele";
 
 export default function Home() {
   return (
@@ -222,6 +223,8 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <Stele />
 
       <footer className="bg-[#4a2f1f] text-white mt-12 md:mt-16">
         <div className="max-w-7xl mx-auto px-4 md:px-8 py-8 flex justify-between flex-wrap gap-4">
