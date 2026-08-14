@@ -4,7 +4,7 @@ import Flaut3D from "../components/Flaut3D";
 
 export default function MuzeuPage() {
   const timeline = [
-    ["1807", "Dinu Negruți primește moșia de la Hermeziu."],
+    ["1807", "Dinu Negruț primește moșia de la Hermeziu."],
     ["1968", "Este amenajat primul spațiu muzeal în fostul conac."],
     ["1995", "Muzeul este inaugurat oficial și dedicat familiei Negruzzi."],
     ["2026", "Muzeul este integrat în aplicația WebGIS interactivă."],
@@ -75,7 +75,7 @@ export default function MuzeuPage() {
           <p className="text-lg leading-relaxed mb-4">
             Muzeul „Constantin Negruzzi” este amenajat în fostul conac al
             familiei Negruzzi din Hermeziu, pe vechea moșie primită de Dinu
-            Negruți în anul 1807.
+            Negruț în anul 1807.
           </p>
 
           <p className="text-lg leading-relaxed mb-4">
@@ -157,7 +157,7 @@ export default function MuzeuPage() {
           </h2>
 
           <p className="text-xl max-w-3xl mx-auto mb-8">
-            Descoperă istoria familiei Negruzzi, de la Dinu Negruți și
+            Descoperă istoria familiei Negruzzi, de la Dinu Negruț și
             Constantin Negruzzi până la Ella Negruzzi, Mihai Negruzzi și Leon
             Bob Negruzzi.
           </p>

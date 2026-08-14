@@ -5,9 +5,9 @@ import { useState } from "react";
 const membri = [
   {
     id: "dinu",
-    nume: "Dinu Negruți",
+    nume: "Dinu Negruț",
     perioada: "începutul familiei la Hermeziu",
-    text: "Dinu Negruți, tatăl lui Constantin Negruzzi, provenea dintr-o familie de răzeși din zona Odobeștilor. În anul 1807 s-a căsătorit cu Sofia Hermeziu și a primit ca zestre moșia Trifeștii-Vechi, actualul Hermeziu.",
+    text: "Dinu Negruț, tatăl lui Constantin Negruzzi, provenea dintr-o familie de răzeși din zona Odobeștilor. În anul 1807 s-a căsătorit cu Sofia Hermeziu și a primit ca zestre moșia Trifeștii-Vechi, actualul Hermeziu.",
   },
   {
     id: "Constantin",
@@ -262,7 +262,7 @@ export default function FamiliePage() {
 
           <div className="overflow-x-auto pb-6">
             <div className="min-w-[1200px] flex flex-col items-center">
-              <CardArbore id="dinu" nume="Dinu Negruți" partener="Sofia Hermeziu" />
+              <CardArbore id="dinu" nume="Dinu Negruț" partener="Sofia Hermeziu" />
               <LinieV />
 
               <CardArbore
