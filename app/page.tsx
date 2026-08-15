@@ -1,7 +1,7 @@
 import MapSection from "./MapSection";
 import Stele from "./components/Stele";
 
-export default function Acasa() {
+export default function Acasa() { 
   return (
     <main className="min-h-screen bg-gradient-to-b from-[#faf7f2] to-[#f1e6d6] text-[#2f1d14]">
       <section className="max-w-7xl mx-auto px-4 md:px-8 py-6 md:py-8">
