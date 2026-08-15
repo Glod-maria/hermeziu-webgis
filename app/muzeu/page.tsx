@@ -1,4 +1,3 @@
-"use client";
 
 import Flaut3D from "../components/Flaut3D";
 
@@ -47,28 +46,20 @@ export default function MuzeuPage() {
             className="w-full h-[430px] object-cover opacity-90"
           />
 
-          <div className="bg-gradient-to-r from-[#3d2619] to-[#6b4a32] p-10 text-center text-white">
-            <p className="uppercase tracking-[0.35em] text-sm text-[#d9b46f] mb-4">
-              Patrimoniu cultural • Hermeziu
-            </p>
+<div className="bg-gradient-to-r from-[#3d2619] to-[#6b4a32] p-10 text-center text-white">
 
-            <h1 className="text-5xl md:text-6xl font-serif font-bold mb-4">
-              Muzeul „Constantin Negruzzi”
-            </h1>
+  <h1 className="text-5xl md:text-6xl font-serif font-bold mb-4 text center">
+    Muzeul „Constantin Negruzzi”
+  </h1>
 
-            <div className="w-32 h-1 bg-[#c58a3a] rounded-full mx-auto mb-6" />
+</div>
 
-            <p className="max-w-4xl mx-auto text-xl text-[#fff7ec]">
-              Fostul conac al familiei Negruzzi, transformat într-un spațiu
-              dedicat memoriei, literaturii și istoriei culturale românești.
-            </p>
-          </div>
         </div>
       </section>
 
       <section className="max-w-7xl mx-auto px-8 py-10 grid lg:grid-cols-3 gap-8">
         <div className="lg:col-span-2 bg-[#fffdf8] rounded-[30px] shadow-xl p-8 border border-[#d9c5a1]">
-          <h2 className="text-4xl font-serif font-bold mb-6">
+          <h2 className="text-4xl font-serif font-bold mb-6 text-center">
             Istoria muzeului
           </h2>
 
@@ -92,7 +83,7 @@ export default function MuzeuPage() {
         </div>
 
         <div className="bg-[#4a2f1f] text-white rounded-[30px] shadow-xl p-8">
-          <h2 className="text-3xl font-serif font-bold mb-6">
+          <h2 className="text-3xl font-serif font-bold mb-6 text-center">
             Informații rapide
           </h2>
 
@@ -126,7 +117,7 @@ export default function MuzeuPage() {
 
       <section className="max-w-7xl mx-auto px-8 py-10">
         <div className="bg-[#fffdf8] rounded-[30px] shadow-xl p-8 border border-[#d9c5a1]">
-          <h2 className="text-4xl font-serif font-bold mb-8">
+          <h2 className="text-4xl font-serif font-bold mb-8 text-center">
             Timeline istoric
           </h2>
 
@@ -146,36 +137,10 @@ export default function MuzeuPage() {
         </div>
       </section>
 
-      <section className="max-w-7xl mx-auto px-8 py-10">
-        <div className="bg-[#fffdf8] rounded-[30px] shadow-xl border border-[#d9c5a1] p-10 text-center">
-          <p className="uppercase tracking-[0.3em] text-sm text-[#8b5a2b] mb-4">
-            Arbore genealogic
-          </p>
-
-          <h2 className="text-5xl font-serif font-bold mb-5">
-            Familia Negruzzi
-          </h2>
-
-          <p className="text-xl max-w-3xl mx-auto mb-8">
-            Descoperă istoria familiei Negruzzi, de la Dinu Negruț și
-            Constantin Negruzzi până la Ella Negruzzi, Mihai Negruzzi și Leon
-            Bob Negruzzi.
-          </p>
-
-          <a
-            href="/familie"
-            className="inline-block bg-[#4a2f1f] text-white px-10 py-5 rounded-2xl font-bold text-lg hover:bg-[#6b4a32]"
-          >
-            👨‍👩‍👧 Explorează familia Negruzzi
-          </a>
-        </div>
-      </section>
-
+     
       <section className="max-w-7xl mx-auto px-8 py-10">
         <div className="bg-[#f7f0e4] rounded-[40px] shadow-2xl border border-[#d9c5a1] p-8 md:p-12">
-          <p className="uppercase tracking-[0.3em] text-sm text-[#8b5a2b] mb-4 text-center">
-            Colecția muzeului
-          </p>
+       
 
           <h2 className="text-4xl md:text-5xl font-serif font-bold text-center mb-4">
             Comori ale familiei Negruzzi
@@ -233,9 +198,6 @@ export default function MuzeuPage() {
 <section className="max-w-7xl mx-auto px-8 py-10">
   <div className="bg-[#fffdf8] rounded-[30px] shadow-xl border border-[#d9c5a1] p-10">
 
-    <p className="uppercase tracking-[0.3em] text-sm text-[#8b5a2b] mb-4 text-center">
-      Obiect digitalizat
-    </p>
 
     <h2 className="text-4xl md:text-5xl font-serif font-bold text-center mb-4">
       Model 3D al flautului lui Iacob Negruzzi
@@ -255,11 +217,11 @@ export default function MuzeuPage() {
 
       <section className="max-w-7xl mx-auto px-8 py-10">
         <div className="bg-[#fffdf8] rounded-3xl shadow-xl border border-[#d9c5a1] p-8">
-          <h2 className="text-4xl font-serif font-bold mb-3">
+          <h2 className="text-4xl font-serif font-bold mb-3 text-center">
             Galerie foto
           </h2>
 
-          <div className="w-32 h-1 bg-[#c58a3a] rounded-full mb-8" />
+         
 
           <div className="flex gap-5 overflow-x-auto pb-4">
             <img src="/bust.jpeg" className="h-80 rounded-3xl shadow-lg" alt="Bust" />
@@ -275,18 +237,8 @@ export default function MuzeuPage() {
           </div>
         </div>
       </section>
-
-      <section className="max-w-7xl mx-auto px-8 py-10 pb-20">
-        <div className="bg-gradient-to-r from-[#3d2619] to-[#6b4a32] text-white rounded-[30px] shadow-xl p-8">
-          <h2 className="text-4xl font-serif font-bold mb-6">
-            Integrare GIS și WebGIS
-          </h2>
-
-          <p className="text-xl leading-relaxed">
-           Muzeul este integrat în aplicația WebGIS prin utilizarea coordonatelor GPS, a datelor spațiale vectoriale prelucrate în QGIS, a fișierelor GeoJSON, a galeriei foto, a turului virtual și a modelului 3D interactiv al flautului lui Iacob Negruzzi. Prin combinarea acestor tehnologii, patrimoniul cultural de la Hermeziu este transpus într-un mediu digital interactiv, accesibil publicului larg.
-          </p>
-        </div>
-      </section>
+   
+        
     </main>
   );
 }

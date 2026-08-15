@@ -204,7 +204,7 @@ export default function FamiliePage() {
   }: {
     id: string;
     nume: string;
-    partener?: string;
+    partener: string;
   }) => (
     <button
       onClick={() => mergiLaMembru(id)}
@@ -235,21 +235,7 @@ export default function FamiliePage() {
           ← Înapoi la pagina muzeului
         </a>
 
-        <div className="text-center mt-10 mb-14">
-          <p className="uppercase tracking-[0.35em] text-[#9a6328] mb-4">
-            Arbore genealogic povestit
-          </p>
-
-          <h1 className="text-6xl font-serif font-bold mb-5">
-            Familia Negruzzi
-          </h1>
-
-          <p className="text-xl max-w-4xl mx-auto leading-relaxed">
-            Secțiune cronologică dedicată membrilor familiei Negruzzi și
-            legăturii lor cu satul Hermeziu, fostul Trifeștii Vechi.
-          </p>
-        </div>
-
+     
         <section className="bg-[#fffdf8] rounded-[30px] shadow-xl border border-[#d9c5a1] p-8 mb-12">
           <h2 className="text-4xl font-serif font-bold text-center mb-3">
             Arbore genealogic interactiv
@@ -447,7 +433,7 @@ export default function FamiliePage() {
 
         <section className="mt-16">
           <div className="bg-[#fffdf8] rounded-[30px] shadow-xl p-8 border border-[#d9c5a1]">
-            <h2 className="text-4xl font-serif font-bold mb-3">
+            <h2 className="text-4xl font-serif font-bold mb-3 text-center">
               Galerie istorică a familiei Negruzzi
             </h2>
 
