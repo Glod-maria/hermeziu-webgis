@@ -1,4 +1,4 @@
-export default function BisericaPage() {
+export default function PaginaBiserica() {
   const info = [
     ["Localitate", "Hermeziu, Iași"],
     ["An construcție", "1839"],
@@ -142,51 +142,29 @@ M-am dus după ai mei străbuni
 <section className="max-w-7xl mx-auto px-6 md:px-8 py-12">
   <div className="grid lg:grid-cols-2 gap-10 items-center">
 
-    <div>
-      <a
-        href="/"
-        className="inline-block mb-6 bg-[#4a2f1f] text-white px-5 py-3 rounded-full font-bold hover:bg-[#6b4a32] transition"
-      >
-        ← Înapoi la pagina principală
-      </a>
+   <div>
+  <a
+    href="/"
+    className="inline-block mb-6 bg-[#4a2f1f] text-white px-5 py-3 rounded-full font-bold hover:bg-[#6b4a32] transition"
+  >
+    ← Înapoi la pagina principală
+  </a>
 
-      <p className="uppercase tracking-[0.35em] text-sm text-[#8b5a2b] mb-4">
-        Patrimoniu religios • Hermeziu
-      </p>
+  <h1 className="text-5xl md:text-7xl font-serif font-bold mb-6 leading-tight text-center">
+    Biserica
+    <br />
+    „Sfinții Împărați
+    <br />
+    Constantin și Elena”
+  </h1>
 
-      <h1 className="text-5xl md:text-7xl font-serif font-bold mb-6 leading-tight">
-        Biserica
-        <br />
-        „Sfinții Împărați
-        <br />
-        Constantin și Elena”
-      </h1>
-
-      <div className="w-32 h-1 bg-[#c58a3a] rounded-full mb-8" />
-
-      <p className="text-xl leading-relaxed mb-8">
-        Ctitorită în anul 1839 de Constantin Negruzzi, biserica reprezintă
-        unul dintre cele mai valoroase monumente istorice și religioase
-        ale satului Hermeziu.
-      </p>
-
-      <div className="flex flex-wrap gap-4">
-        <div className="bg-[#fffdf8] border border-[#d9c5a1] rounded-2xl px-6 py-4 shadow">
-          <p className="text-3xl font-bold text-[#8b5a2b]">1839</p>
-          <p>Construcție</p>
-        </div>
-
-        <div className="bg-[#fffdf8] border border-[#d9c5a1] rounded-2xl px-6 py-4 shadow">
-          <p className="text-3xl font-bold text-[#8b5a2b]">LMI</p>
-          <p>Monument istoric</p>
-        </div>
-
-        <div className="bg-[#fffdf8] border border-[#d9c5a1] rounded-2xl px-6 py-4 shadow">
-          <p className="text-3xl font-bold text-[#8b5a2b]">1868</p>
-          <p>Necropola familiei</p>
-        </div>
-      </div>
-    </div>
+ 
+  <p className="text-xl leading-relaxed mb-8">
+    Ctitorită în anul 1839 de Constantin Negruzzi, biserica reprezintă
+    unul dintre cele mai valoroase monumente istorice și religioase
+    ale satului Hermeziu.
+  </p>
+</div>
 
     <div>
       <img
@@ -218,11 +196,9 @@ M-am dus după ai mei străbuni
 
       <section className="max-w-7xl mx-auto px-8 py-8 grid lg:grid-cols-[1.2fr_0.8fr] gap-10">
         <div className="bg-[#fffdf8] rounded-[36px] shadow-xl p-8 md:p-10 border border-[#d9c5a1]">
-          <p className="uppercase tracking-[0.3em] text-sm text-[#8b5a2b] mb-4">
-            Istorie
-          </p>
 
-          <h2 className="text-4xl md:text-5xl font-serif font-bold mb-8">
+
+          <h2 className="text-4xl md:text-5xl font-serif font-bold mb-8 text-center">
             Biserica familiei Negruzzi
           </h2>
 
@@ -248,7 +224,7 @@ M-am dus după ai mei străbuni
         </div>
 
         <div className="bg-gradient-to-br from-[#3d2619] to-[#6b4a32] text-white rounded-[36px] shadow-xl p-8 md:p-10">
-          <h2 className="text-4xl font-serif font-bold mb-6">
+          <h2 className="text-4xl font-serif font-bold mb-6 text-center">
             De ce este importantă?
           </h2>
 
@@ -281,11 +257,9 @@ M-am dus după ai mei străbuni
       <section className="max-w-7xl mx-auto px-8 py-8">
         <div className="grid lg:grid-cols-2 gap-10">
           <div className="bg-[#fffdf8] rounded-[36px] shadow-xl p-8 border border-[#d9c5a1]">
-            <p className="uppercase tracking-[0.25em] text-sm text-[#8b5a2b] mb-4">
-              Inscripție istorică
-            </p>
+          
 
-            <h2 className="text-4xl font-serif font-bold mb-6">
+            <h2 className="text-4xl font-serif font-bold mb-6 text-center">
               Pisania bisericii
             </h2>
 
@@ -303,11 +277,9 @@ M-am dus după ai mei străbuni
           </div>
 
           <div className="bg-[#f7f0e4] rounded-[36px] shadow-xl p-8 border border-[#d9c5a1]">
-            <p className="uppercase tracking-[0.25em] text-sm text-[#8b5a2b] mb-4">
-              Spațiu memorial
-            </p>
+   
 
-            <h2 className="text-4xl font-serif font-bold mb-6">
+            <h2 className="text-4xl font-serif font-bold mb-6 text-center">
               Necropola familiei Negruzzi
             </h2>
 
@@ -330,9 +302,7 @@ M-am dus după ai mei străbuni
 
       <section className="max-w-7xl mx-auto px-8 py-12">
         <div className="bg-[#fffdf8] rounded-[36px] shadow-xl p-8 md:p-10 border border-[#d9c5a1]">
-          <p className="uppercase tracking-[0.25em] text-sm text-[#8b5a2b] mb-4 text-center">
-            Morminte și epitafuri
-          </p>
+         
 
           <h2 className="text-4xl md:text-5xl font-serif font-bold text-center mb-6">
             Necropola familiei Negruzzi
@@ -344,22 +314,7 @@ M-am dus după ai mei străbuni
             vechea moșie și patrimoniul cultural al satului Hermeziu.
           </p>
 
-          <div className="flex flex-wrap justify-center gap-8 mb-12 text-center">
-            <div className="bg-[#f8f3ec] border border-[#d9c5a1] rounded-3xl px-8 py-5 shadow">
-              <p className="text-4xl font-bold text-[#8b5a2b]">1839</p>
-              <p className="font-medium">Anul ctitoriei</p>
-            </div>
-
-            <div className="bg-[#f8f3ec] border border-[#d9c5a1] rounded-3xl px-8 py-5 shadow">
-              <p className="text-4xl font-bold text-[#8b5a2b]">1868</p>
-              <p className="font-medium">Mormântul scriitorului</p>
-            </div>
-
-            <div className="bg-[#f8f3ec] border border-[#d9c5a1] rounded-3xl px-8 py-5 shadow">
-              <p className="text-4xl font-bold text-[#8b5a2b]">6</p>
-              <p className="font-medium">Monumente prezentate</p>
-            </div>
-          </div>
+         
 
           <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
             {necropola.map((mormant) => (
@@ -394,51 +349,12 @@ M-am dus după ai mei străbuni
         </div>
       </section>
 
-      <section className="max-w-7xl mx-auto px-8 py-12">
-        <div className="bg-[#fffdf8] rounded-[36px] shadow-xl p-8 md:p-10 border border-[#d9c5a1]">
-          <p className="uppercase tracking-[0.25em] text-sm text-[#8b5a2b] mb-4">
-            Arhitectură
-          </p>
 
-          <h2 className="text-4xl md:text-5xl font-serif font-bold mb-8">
-            Arhitectură și patrimoniu religios
-          </h2>
-
-          <div className="grid md:grid-cols-3 gap-6">
-            <div className="bg-[#faf7f2] rounded-3xl p-6 border border-[#e2cda7]">
-              <h3 className="text-2xl font-bold mb-3">Stil clasic</h3>
-              <p className="text-lg leading-relaxed">
-                Biserica are formă de navă și absida altarului semicirculară.
-              </p>
-            </div>
-
-            <div className="bg-[#faf7f2] rounded-3xl p-6 border border-[#e2cda7]">
-              <h3 className="text-2xl font-bold mb-3">
-                Pridvor și clopotniță
-              </h3>
-              <p className="text-lg leading-relaxed">
-                Pridvorul vestic este susținut de șase coloane cilindrice, iar
-                deasupra se ridică o clopotniță.
-              </p>
-            </div>
-
-            <div className="bg-[#faf7f2] rounded-3xl p-6 border border-[#e2cda7]">
-              <h3 className="text-2xl font-bold mb-3">Patrimoniu religios</h3>
-              <p className="text-lg leading-relaxed">
-                Biserica păstrează cărți de cult vechi, icoane și elemente
-                liturgice importante pentru memoria comunității.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
 
      <section className="max-w-7xl mx-auto px-8 py-12">
   <div className="bg-[#fffdf8] rounded-[36px] shadow-xl p-8 md:p-10 border border-[#d9c5a1]">
 
-    <p className="uppercase tracking-[0.25em] text-sm text-[#8b5a2b] mb-4 text-center">
-      Imagini
-    </p>
+
 
     <h2 className="text-4xl md:text-5xl font-serif font-bold text-center mb-10">
       Galerie foto
@@ -464,20 +380,7 @@ M-am dus după ai mei străbuni
   </div>
 </section>         
       
-      <section className="max-w-7xl mx-auto px-8 py-10 pb-20">
-        <div className="bg-gradient-to-r from-[#3d2619] to-[#6b4a32] text-white rounded-[36px] shadow-xl p-8 md:p-10">
-          <h2 className="text-4xl font-serif font-bold mb-6">
-            Integrare în aplicația WebGIS
-          </h2>
 
-          <p className="text-xl leading-relaxed">
-            Biserica este integrată în aplicația WebGIS ca obiectiv cultural,
-            religios și memorial. Ea este localizată pe hartă și inclusă în
-            traseul turistic dedicat patrimoniului familiei Negruzzi din
-            Hermeziu.
-          </p>
-        </div>
-      </section>
     </main>
   );
 }
