@@ -1,4 +1,4 @@
-import MapSection from "./MapSection";
+import MapSection from "./MapHermeziu";
 import Stele from "./components/Stele";
 
 export default function Acasa() { 

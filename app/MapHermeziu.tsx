@@ -2,10 +2,10 @@
 
 import dynamic from "next/dynamic";
 
-const MapHermeziu = dynamic(() => import("./MapHermeziu"), {
+const Harta = dynamic(() => import("./MapSection"), {
   ssr: false,
 });
 
-export default function MapSection() {
-  return <MapHermeziu />;
+export default function MapHermeziu() {
+  return <Harta />;
 }
