@@ -177,7 +177,7 @@ const galerie = [
     titlu: "Inaugurarea primului muzeu Negruzzi",
     imagine: "/8.png",
     descriere:
-      "Fotografie realizată la inaugurarea primului muzeu dedicat familiei Negruzzi, în anul 1986.",
+      "Fotografie realizată la inaugurarea primului muzeu dedicat familiei Negruzzi, în anul 1968.",
   },
 ];
 
