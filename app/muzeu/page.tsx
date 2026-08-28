@@ -36,7 +36,7 @@ export default function MuzeuPage() {
     <main className="min-h-screen bg-gradient-to-b from-[#faf7f2] to-[#f1e6d6] text-[#2f1d14]">
       <section className="max-w-7xl mx-auto px-8 py-8">
         <a href="/" className="text-[#7a4a22] font-bold hover:underline">
-          ← Înapoi la hartă
+          ← Înapoi la pagina principală
         </a>
 
         <div className="mt-8 rounded-[34px] overflow-hidden shadow-2xl bg-[#4a2f1f]">
