@@ -376,8 +376,9 @@ className="px-5 py-4 rounded-2xl border-2 border-[#caa66a] shadow-lg min-w-[190p
               key={membru.id}
               className={`bg-[#fffdf8] rounded-[30px] shadow-xl border overflow-hidden ${
                 selectat === membru.id
-                  ? "border-[#7a4a22] ring-4 ring-[#c58a3a]/40"
+                                  ? "border-[#7a4a22] ring-4 ring-[#c58a3a]/40"
                   : "border-[#d9c5a1]"
+
               } ${membru.imagine ? "grid md:grid-cols-[280px_1fr]" : ""}`}
             >
 

@@ -1,5 +1,6 @@
 import MapSection from "./MapHermeziu";
 import Stele from "./components/Stele";
+import StiaiCa from "./components/StiaiCa";
 
 export default function Acasa() { 
   return (
@@ -35,7 +36,7 @@ export default function Acasa() {
 
           <div className="h-full rounded-[28px] md:rounded-[34px] overflow-hidden shadow-2xl border border-[#d9c5a1]">
             <img
-              src="/muzeu.jpeg"
+              src="/sat.jpeg"
               alt="Muzeul Constantin Negruzzi"
               className="w-full h-full min-h-[430px] object-cover"
             />
@@ -155,6 +156,20 @@ export default function Acasa() {
   </div>
 </section>
 
+  <StiaiCa />
+<section className="max-w-4xl mx-auto px-6 py-16">
+  <div className="bg-[#faf7f0] border border-[#d8c7ae] rounded-2xl px-8 md:px-16 py-12 text-center">
+
+        <p className="text-xl md:text-2xl font-serif leading-relaxed text-[#4e4337]">
+      Unele locuri se descoperă cu ochii, dar se simt cu pașii.
+    </p>
+
+    <p className="mt-4 text-lg font-serif italic text-[#756556]">
+      Hermeziul poate fi privit online, dar povestea lui merită descoperită la fața locului.
+    </p>
+
+  </div>
+</section>
        <section
         id="harta"
         className="max-w-7xl mx-auto px-4 md:px-8 py-8 md:py-10"
@@ -166,6 +181,8 @@ export default function Acasa() {
             <h2 className="text-3xl md:text-4xl font-serif font-bold">
               Harta interactivă
             </h2>
+            <h4>O hartă îți arată locul. O vizită îți dezvăluie povestea.</h4>
+            
           </div>
 
           <div className="rounded-3xl overflow-hidden">
@@ -174,9 +191,7 @@ export default function Acasa() {
 
         </div>
       </section>
-
       <Stele />
-
       <footer className="bg-[#4a2f1f] text-white mt-12 md:mt-16">
         <div className="max-w-7xl mx-auto px-4 md:px-8 py-8">
           <p className="text-sm md:text-base leading-relaxed">
